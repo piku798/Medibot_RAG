@@ -1,1 +1,0 @@
-. The book is in two parts; first, an explanation of theo- ry; second, the program itself, with exercises. The supple- mentary manual contains specialized programs for areas of deficit, including handwriting, spelling, math, pre-school readiness, and high school or adult learning

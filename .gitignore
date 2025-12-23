@@ -20,3 +20,6 @@ Thumbs.db
 
 # Logs
 *.log
+# Raw & processed medical data
+data/
+
