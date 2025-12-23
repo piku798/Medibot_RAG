@@ -1,5 +1,3 @@
----
-
 # 🩺 MediBot_RAG – Medical AI Assistant using RAG
 
 **MediBot_RAG** is a production-style **Medical Question Answering System** built using **Retrieval-Augmented Generation (RAG)**.
@@ -7,7 +5,7 @@ It retrieves verified medical knowledge from documents and generates **context-g
 
 This project demonstrates **end-to-end Generative AI system design**, covering data ingestion, vector databases, semantic search, LLM orchestration, and UI integration.
 
----
+
 
 ## 🎯 Why This Project Matters (For Recruiters)
 
@@ -17,7 +15,7 @@ This project demonstrates **end-to-end Generative AI system design**, covering d
 * ✔ Medical-safe prompt engineering with disclaimers
 * ✔ Clean modular architecture ready for deployment
 
----
+
 
 ## 🎥 Demo
 
@@ -25,7 +23,7 @@ This project demonstrates **end-to-end Generative AI system design**, covering d
 
 ![MediBot RAG Demo](output/demo_ui.png)
 
----
+
 
 ## 🧠 System Architecture
 
@@ -64,7 +62,7 @@ Streamlit Chat UI
 * 🧪 **Standalone retriever testing before LLM integration**
 * 🔐 Secure API key handling using `.env`
 
----
+
 
 ## 🛠️ Tech Stack (ATS-Optimized)
 
@@ -90,7 +88,7 @@ Streamlit Chat UI
 * PyMuPDF (PDF Processing)
 * python-dotenv
 
----
+
 
 ## 📂 Project Structure
 
@@ -173,7 +171,7 @@ python test_llm.py
 streamlit run ui/streamlit_app.py
 ```
 
----
+
 
 ## 💬 Example Queries
 
@@ -182,7 +180,7 @@ streamlit run ui/streamlit_app.py
 * *“What is Damiana used for medically?”*
 * *“Which body systems does Damiana affect?”*
 
----
+
 
 ## 🛡️ Medical Safety & Ethics
 
@@ -194,7 +192,6 @@ streamlit run ui/streamlit_app.py
 > **Disclaimer:**
 > This application provides educational information only and is not a medical diagnosis. Always consult a licensed medical professional.
 
----
 
 ## 📈 What This Project Demonstrates
 
@@ -204,7 +201,7 @@ streamlit run ui/streamlit_app.py
 * Modular, production-ready Python architecture
 * UI + backend integration
 
----
+
 
 ## 🔮 Future Enhancements
 
@@ -215,7 +212,6 @@ streamlit run ui/streamlit_app.py
 * Dockerization & cloud deployment
 * LangGraph-based multi-step reasoning
 
----
 
 ## 👤 Author
 
@@ -224,7 +220,8 @@ AI / ML Engineer | Generative AI Enthusiast
 
 📌 GitHub: [https://github.com/piku798](https://github.com/piku798)
 
----
+
+
 
 
 
