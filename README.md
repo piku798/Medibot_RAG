@@ -1,27 +1,35 @@
-🩺 MediBot_RAG – Medical AI Assistant using RAG
+---
 
-MediBot_RAG is a production-style Medical Question Answering System built using Retrieval-Augmented Generation (RAG).
-It retrieves verified medical knowledge from documents and generates context-grounded, non-hallucinated responses through an LLM, presented via a Streamlit chat interface.
+# 🩺 MediBot_RAG – Medical AI Assistant using RAG
 
-This project demonstrates end-to-end Generative AI system design, covering data ingestion, vector databases, semantic search, LLM orchestration, and UI integration.
+**MediBot_RAG** is a production-style **Medical Question Answering System** built using **Retrieval-Augmented Generation (RAG)**.
+It retrieves verified medical knowledge from documents and generates **context-grounded, non-hallucinated responses** through an LLM, presented via a **Streamlit chat interface**.
 
-🎯 Why This Project Matters (For Recruiters)
+This project demonstrates **end-to-end Generative AI system design**, covering data ingestion, vector databases, semantic search, LLM orchestration, and UI integration.
 
-✔ Demonstrates real-world RAG pipeline (not a toy chatbot)
+---
 
-✔ Shows LLMOps & GenAI system design skills
+## 🎯 Why This Project Matters (For Recruiters)
 
-✔ Includes retrieval testing before LLM generation (industry best practice)
+* ✔ Demonstrates **real-world RAG pipeline** (not a toy chatbot)
+* ✔ Shows **LLMOps & GenAI system design skills**
+* ✔ Includes **retrieval testing before LLM generation** (industry best practice)
+* ✔ Medical-safe prompt engineering with disclaimers
+* ✔ Clean modular architecture ready for deployment
 
-✔ Medical-safe prompt engineering with disclaimers
+---
 
-✔ Clean modular architecture ready for deployment
+## 🎥 Demo
 
-🎥 Demo
+**Streamlit Chat Interface – MediBot in Action**
 
-Streamlit Chat Interface – MediBot in Action
+![MediBot RAG Demo](output/demo_ui.png)
 
-🧠 System Architecture
+---
+
+## 🧠 System Architecture
+
+```
 Medical PDFs
    ↓
 Text Extraction (PyMuPDF)
@@ -41,60 +49,52 @@ Groq LLM (LLaMA 3.1)
 Answer + Source Attribution
    ↓
 Streamlit Chat UI
+```
 
-🚀 Key Features
+---
 
-📚 Retrieval-Augmented Generation (RAG)
+## 🚀 Key Features
 
-🔎 Semantic Search with Vector Database (ChromaDB)
+* 📚 **Retrieval-Augmented Generation (RAG)**
+* 🔎 **Semantic Search with Vector Database (ChromaDB)**
+* 🧩 **Chunking strategy optimized for medical content**
+* 🤖 **LLM grounding using retrieved context only**
+* 🛑 **Hallucination prevention & safe refusal logic**
+* 💬 **Streamlit chat UI with source visibility**
+* 🧪 **Standalone retriever testing before LLM integration**
+* 🔐 Secure API key handling using `.env`
 
-🧩 Chunking strategy optimized for medical content
+---
 
-🤖 LLM grounding using retrieved context only
+## 🛠️ Tech Stack (ATS-Optimized)
 
-🛑 Hallucination prevention & safe refusal logic
+**Languages & Tools**
 
-💬 Streamlit chat UI with source visibility
+* Python
+* Git & GitHub
 
-🧪 Standalone retriever testing before LLM integration
+**AI / ML / GenAI**
 
-🔐 Secure API key handling using .env
+* Retrieval-Augmented Generation (RAG)
+* Prompt Engineering
+* Sentence-Transformers
+* Large Language Models (LLMs)
+* Embeddings & Semantic Search
 
-🛠️ Tech Stack (ATS-Optimized)
+**Frameworks & Libraries**
 
-Languages & Tools
+* LangChain (Core Runnables)
+* ChromaDB (Vector Database)
+* Groq API (LLaMA 3.1)
+* Streamlit (UI)
+* PyMuPDF (PDF Processing)
+* python-dotenv
 
-Python
+---
 
-Git & GitHub
+## 📂 Project Structure
 
-AI / ML / GenAI
-
-Retrieval-Augmented Generation (RAG)
-
-Prompt Engineering
-
-Sentence-Transformers
-
-Large Language Models (LLMs)
-
-Embeddings & Semantic Search
-
-Frameworks & Libraries
-
-LangChain (Core Runnables)
-
-ChromaDB (Vector Database)
-
-Groq API (LLaMA 3.1)
-
-Streamlit (UI)
-
-PyMuPDF (PDF Processing)
-
-python-dotenv
-
-📂 Project Structure
+```
 Medibot_RAG/
 ├── ingestion/
 │   ├── loader.py        # PDF → text extraction
@@ -117,87 +117,114 @@ Medibot_RAG/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
-⚙️ Installation & Setup
-1️⃣ Clone Repository
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/piku798/Medibot_RAG.git
 cd Medibot_RAG
+```
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
+
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Configure Environment Variables
+### 4️⃣ Configure Environment Variables
 
-Create a .env file:
+Create a `.env` file:
 
+```env
 GROQ_API_KEY=your_groq_api_key_here
+```
 
-▶️ How to Run
-🔹 Test Retriever (No LLM)
+---
+
+## ▶️ How to Run
+
+### 🔹 Test Retriever (No LLM)
+
+```bash
 python test_retriever.py
+```
 
-🔹 Test Full RAG + LLM Pipeline
+### 🔹 Test Full RAG + LLM Pipeline
+
+```bash
 python test_llm.py
+```
 
-🔹 Run Streamlit UI
+### 🔹 Run Streamlit UI
+
+```bash
 streamlit run ui/streamlit_app.py
+```
 
-💬 Example Queries
+---
 
-“I have a headache”
+## 💬 Example Queries
 
-“What are common headache treatments?”
+* *“I have a headache”*
+* *“What are common headache treatments?”*
+* *“What is Damiana used for medically?”*
+* *“Which body systems does Damiana affect?”*
 
-“What is Damiana used for medically?”
+---
 
-“Which body systems does Damiana affect?”
+## 🛡️ Medical Safety & Ethics
 
-🛡️ Medical Safety & Ethics
+* ❌ No diagnosis or prescription
+* ❌ No hallucinated medical facts
+* ✅ Context-only responses
+* ✅ Mandatory medical disclaimer in every answer
 
-❌ No diagnosis or prescription
+> **Disclaimer:**
+> This application provides educational information only and is not a medical diagnosis. Always consult a licensed medical professional.
 
-❌ No hallucinated medical facts
+---
 
-✅ Context-only responses
+## 📈 What This Project Demonstrates
 
-✅ Mandatory medical disclaimer in every answer
+* End-to-end **GenAI application development**
+* **Vector database design & optimization**
+* **LLM grounding and hallucination control**
+* Modular, production-ready Python architecture
+* UI + backend integration
 
-Disclaimer:
-This application provides educational information only and is not a medical diagnosis. Always consult a licensed medical professional.
+---
 
-📈 What This Project Demonstrates
+## 🔮 Future Enhancements
 
-End-to-end GenAI application development
+* Emergency symptom detection & alerts
+* Confidence scoring for answers
+* Multi-document citation highlighting
+* FastAPI backend for deployment
+* Dockerization & cloud deployment
+* LangGraph-based multi-step reasoning
 
-Vector database design & optimization
+---
 
-LLM grounding and hallucination control
+## 👤 Author
 
-Modular, production-ready Python architecture
-
-UI + backend integration
-
-🔮 Future Enhancements
-
-Emergency symptom detection & alerts
-
-Confidence scoring for answers
-
-Multi-document citation highlighting
-
-FastAPI backend for deployment
-
-Dockerization & cloud deployment
-
-LangGraph-based multi-step reasoning
-
-👤 Author
-
-Neelachala Nayak
+**Neelachala Nayak**
 AI / ML Engineer | Generative AI Enthusiast
 
-📌 GitHub: https://github.com/piku798
+📌 GitHub: [https://github.com/piku798](https://github.com/piku798)
+
+---
+
+
+
