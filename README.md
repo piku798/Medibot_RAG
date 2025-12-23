@@ -21,7 +21,8 @@ This project demonstrates **end-to-end Generative AI system design**, covering d
 
 **Streamlit Chat Interface – MediBot in Action**
 
-![MediBot RAG Demo](output/Screenshot 2025-12-22 223357.png)
+![MediBot RAG Demo](output/Screenshot%202025-12-22%20223357.png)
+
 
 
 
@@ -219,6 +220,7 @@ streamlit run ui/streamlit_app.py
 AI / ML Engineer | Generative AI Enthusiast
 
 📌 GitHub: [https://github.com/piku798](https://github.com/piku798)
+
 
 
 
